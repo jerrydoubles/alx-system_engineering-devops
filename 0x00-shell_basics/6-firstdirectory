@@ -1,21 +1,2 @@
 #!/bin/bash
-
-
-
-# Create the directory
-
 mkdir /tmp/my_first_directory
-
-
-
-# Check if the directory was successfully created
-
-if [ $? -eq 0 ]; then
-
-  echo "Directory /tmp/my_first_directory created successfully."
-
-else
-
-  echo "Error creating directory /tmp/my_first_directory."
-
-fi
