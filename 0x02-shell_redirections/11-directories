@@ -1,3 +1,3 @@
 #!/bin/bash
-count=$(find . -type d | wc -l)
-echo "Number of directories and sub-directories: $count"
+count=$(find . -type d \( ! -name . -a ! -name .. \) -print | grep -c "./.")
+echo "Number of directories and sub-directories (excluding . and ..): $count"
